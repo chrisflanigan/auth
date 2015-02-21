@@ -1,7 +1,8 @@
 <?php
+$config = include(dirname(__FILE__).'/config.php');
 // Change these
-define('CLIENT_ID',         '628778819137.apps.googleusercontent.com');
-define('CLIENT_SECRET',     'W17VGEyY5luy6AeIFb9fYH5n');
+define('CLIENT_ID',         $config['youtube']['clientId']);
+define('CLIENT_SECRET',     $config['youtube']['clientSecret']);
 define('REDIRECT_URI',      ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on")?'https':'http').'://' . $_SERVER['SERVER_NAME'] . $_SERVER['SCRIPT_NAME']);
 define(
     'SCOPE',
