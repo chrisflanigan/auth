@@ -1,5 +1,5 @@
 <?php
-$config = include(dirname(__FILE__).'/config.php');
+include(dirname(__FILE__).'/config.php');
 // Change these
 define('CLIENT_ID',         $config['youtube']['clientId']);
 define('CLIENT_SECRET',     $config['youtube']['clientSecret']);
